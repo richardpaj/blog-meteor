@@ -1,5 +1,7 @@
 ApplicationController = RouteController.extend
   layoutTemplate: 'applicationLayout'
+  data: ->
+    return Settings.findOne()
   yieldTemplates:
     appHeader:
       to: 'header'
