@@ -1,5 +1,8 @@
 ApplicationController = RouteController.extend
   layoutTemplate: 'applicationLayout'
+  yieldTemplates:
+    appHeader:
+      to: 'header'
 
 Router.configure
   controller: ApplicationController
